@@ -1,7 +1,7 @@
 
 -- Query 1
 SELECT 
-	id                        AS [Employee's id],
+	id                        AS [Employee id],
 	name                      AS [Employee name],
 	ISNULL(salary, 0)         AS [Month salary],
 	ISNULL(salary, 0) * 12    AS [Year salary]
@@ -16,7 +16,7 @@ FROM employees;
 
 -- Query 3
 
-SELECT DISTINCT
+SELECT
 	id,
 	hire_date                                  AS [Unique department ids],
 	(DATEDIFF(YEAR, hire_date, GETDATE()))     AS [How much years is working]
